@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        // Class
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+
+Usage as a mixin
+Warning: The `invisible()` mixin has been deprecated as of v4.3.0. It will be removed entirely in v5.
+.element {
+  @include invisible(visible);
+}
+.element {
+  @include invisible(hidden);
+}
+    </style>
+</head>
+<body>
+    <div class="visible">...</div>
+<div class="invisible">...</div>
+</body>
+</html>

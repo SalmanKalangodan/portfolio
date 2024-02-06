@@ -1,0 +1,362 @@
+#main {
+    width: 100vw;
+    height: 695px;
+    background-color: #262626;
+    color: aliceblue;
+    animation-name: movemain;
+    animation-duration: 1s;
+}
+.bob{
+    background-color: #262626;
+}
+
+.kid {
+    width: 50vw;
+    height: 695px;
+}
+
+#child {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#photo {
+    width: 300px;
+    height: 300px;
+    background-image: url(IMG_3952_edited.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px white;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    opacity: .5;
+}
+
+#childkid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#childkid2{
+    width: 60%;
+    height: 60%;
+    border: solid 1px white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px wheat;
+    animation-name: boxmove;
+    animation-iteration-count:infinite ;
+    animation-duration: 3s;
+    align-items: center;
+    opacity: .5;
+}
+#childkid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%px;
+    align-items: center;
+    /* border: solid 1px wheat; */
+}
+
+.head {
+    text-align: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Protest Strike', sans-serif;
+    text-shadow: 3px 3px 5px rgb(6, 6, 6);
+    animation-timing-function: linear;
+}
+
+#navi {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #262626;
+    box-shadow: 0px 0px 5px black;
+}
+
+.navi1 {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Protest Strike', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* #main1{
+    width: 70vw;
+    height: 90vh;
+    border: solid 1px black;
+    text-align: center;
+} */
+.para {
+    text-align: center;
+    text-transform: capitalize;
+    animation-name: navimove;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+#child1 {
+    overflow: auto;
+    background-color: #262626;
+    scroll-behavior: smooth;
+}
+
+.codi {
+    text-align: center;
+}
+
+.pro {
+    text-align: center;
+}
+
+.form-1 {
+    width: 100%;
+}
+
+@keyframes move{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        opacity: 1;
+    }
+}  
+/* @keyframes navimove{
+    0%{
+        text-transform: lowercase;
+        text-size-adjust: 0px;
+    }
+    5%{
+        text-transform: capitalize;
+    }
+    10%{
+        text-transform: uppercase;
+    }
+    15%{
+        text-transform: lowercase;
+    }
+    20%{
+        text-transform: capitalize;
+    }
+    25%{
+        text-transform: uppercase;
+    }
+    30%{
+        text-transform: lowercase;
+    }
+    35%{
+        text-transform: capitalize;
+    }
+    40%{
+        text-transform: uppercase;
+    }
+    45%{
+        text-transform: lowercase;
+    }
+    50%{
+        text-transform: capitalize;
+    }
+    55%{
+        text-transform: uppercase;
+    }
+    60%{
+        text-transform: capitalize;
+    }
+    65%{
+        text-transform: lowercase;
+    }
+    70%{
+        text-transform: uppercase;
+    }
+    75%{
+        text-transform: lowercase;
+    }
+    80%{
+        text-transform: capitalize;
+    }
+    85%{
+        text-transform: uppercase;
+    }
+    90%{
+        text-transform: lowercase;
+    }
+    95%{
+        text-transform: capitalize;
+    }
+    100%{
+        text-transform: uppercase;
+        text-size-adjust: 5000px; */
+/* }
+} */
+#ani{
+    animation-name: movenavi;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+
+}
+#ani:hover{
+    scale: 1.2;
+}
+#ani1{
+    animation-name: movenavi;
+    animation-duration: .5s;
+    animation-duration: .7s;
+    animation-timing-function: linear;
+}
+#ani1:hover{
+    scale: 1.2;
+}
+#ani2{
+    animation-name: movenavi;
+    animation-duration: .5s;
+    animation-duration: .9s;
+    animation-timing-function: linear;
+}
+#ani2:hover{
+    scale: 1.2;
+}
+#ani3{
+    animation-name: movenavi;
+    animation-duration: .5s;
+    animation-duration: 1.1s;
+    animation-timing-function: linear;
+}
+#ani3:hover{
+    scale: 1.2;
+}
+
+.text:hover {
+    text-decoration: none;
+    color: azure;
+}
+
+.btn-1 {
+    width: 100%;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 30px;
+    display: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    display: block;
+    background-color: #262626;
+}
+html{
+    background-color:#262626;
+}
+.card-23:hover{
+    scale: 1.2;
+    cursor: alias;
+    z-index: 1;
+    transition: linear;
+    transition-duration: 2s;
+}
+.space{
+    height: 80px;
+}
+@keyframes movenavi{
+   0%{
+    transform:translateY(-100px)
+}
+100%{
+    transform: translateY(0px);
+}
+}
+@keyframes movehead{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#about-me{
+    animation-name: movehead;
+    animation-duration: .5s;
+}
+#myskills{
+    animation-name: movehead;
+    animation-duration: .5s;
+}
+
+@keyframes movename{
+    0%{
+     transform:translateX(-100px);
+     opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes movename1{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.head1{
+    animation-name:movename ;
+    animation-duration: .5s;
+}
+.head2{
+    animation-name: movename1;
+    animation-duration: .5s;
+}
+@keyframes boxmove{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+@keyframes movemain{
+    0%{
+        opacity: .5;
+    }
+    100%{
+        opacity: .8;
+    }
+}
+.sg{
+    height: 25px;
+}
+.find{
+    height: 75px;
+    width: 100%;
+    border: solid 1px red;
+    display: flex;
+}
